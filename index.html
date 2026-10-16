@@ -1,4 +1,161 @@
 
+<!-- OUR LITTLE LOVE SCRAPBOOK -->
+<style>
+.scrapbook {
+  padding: 70px 20px;
+  background: linear-gradient(180deg,#fff7fa,#ffeaf2);
+  color: #71324f;
+  font-family: 'DM Sans',sans-serif;
+}
+.scrap-inner { max-width: 650px; margin: auto; text-align: center; }
+.scrap-label {
+  font-size: 11px; letter-spacing: 2px;
+  color: #e8799e; text-transform: uppercase;
+}
+.scrap-title {
+  font-family: 'Playfair Display',Georgia,serif;
+  font-size: clamp(32px,8vw,44px);
+  font-weight: 500; line-height: 1.2;
+  margin: 14px 0;
+}
+.scrap-desc { color: #926078; line-height: 1.8; }
+.polaroid-grid {
+  display: grid; grid-template-columns: 1fr 1fr;
+  gap: 17px; margin: 30px 0;
+}
+.polaroid {
+  padding: 10px 10px 18px;
+  background: white; border-radius: 5px;
+  box-shadow: 0 7px 22px #a74d6b18;
+  transform: rotate(-2deg);
+}
+.polaroid:nth-child(even) { transform: rotate(2deg); }
+.photo-placeholder {
+  aspect-ratio: 4/4.5;
+  background: linear-gradient(145deg,#ffe2ed,#f8c4d7,#fff0f5);
+  display: flex; flex-direction: column;
+  align-items: center; justify-content: center;
+  gap: 10px; font-size: 36px;
+}
+.photo-placeholder small {
+  font-size: 11px; color: #9c5575;
+}
+.polaroid p { font-size: 13px; margin: 13px 0 0; }
+.memory-card {
+  background: #fffafd; border: 1px solid #f8d4e0;
+  border-radius: 22px; padding: 24px 20px;
+  margin: 17px 0; text-align: left;
+}
+.memory-card h3 {
+  font-family: 'Playfair Display',Georgia,serif;
+  font-size: 23px; margin: 0 0 10px;
+}
+.memory-card p { font-size: 14px; line-height: 1.9; color: #80536a; margin: 0; }
+.scrap-heart { font-size: 25px; margin-bottom: 8px; }
+.scrap-button {
+  border: 0; border-radius: 30px; padding: 13px 20px;
+  background: #ef7fa5; color: white; margin-top: 15px;
+}
+.scrap-hidden { display: none; }
+.scrap-hidden.open { display: block; }
+.scrap-end { padding-top: 30px; font-size: 13px; color: #a07589; }
+@media(max-width:360px) {
+  .polaroid-grid { gap: 10px; }
+  .polaroid { padding: 7px 7px 13px; }
+}
+</style>
+
+<section class="scrapbook" id="our-scrapbook">
+  <div class="scrap-inner">
+    <div class="scrap-label">A tiny corner of our universe</div>
+    <h2 class="scrap-title">Our Little Memory Lane ♡</h2>
+    <p class="scrap-desc">
+      Not every beautiful love story fits inside a photo album.
+      Some live in conversations, silly moments, and the dreams
+      two people keep making together.
+    </p>
+
+    <div class="polaroid-grid">
+      <div class="polaroid">
+        <div class="photo-placeholder">🎀<small>Reserved for my girl</small></div>
+        <p>My favourite human ♡</p>
+      </div>
+      <div class="polaroid">
+        <div class="photo-placeholder">💌<small>Our little world</small></div>
+        <p>My favourite notification</p>
+      </div>
+      <div class="polaroid">
+        <div class="photo-placeholder">🌙<small>Across the distance</small></div>
+        <p>Still feels like us</p>
+      </div>
+      <div class="polaroid">
+        <div class="photo-placeholder">🫂<small>One day, for real</small></div>
+        <p>The hug we're waiting for</p>
+      </div>
+    </div>
+
+    <div class="memory-card">
+      <div class="scrap-heart">🌷</div>
+      <h3>To my Kuchu Puchu</h3>
+      <p>
+        My cute, chaotic, slightly naughty little baby.
+        The one whose angry moments can be as memorable as
+        her sweetest ones. I hope you never feel like you have
+        to change the little things that make you yourself.
+        Those little things are part of the girl I adore.
+      </p>
+    </div>
+
+    <div class="memory-card">
+      <div class="scrap-heart">🌙</div>
+      <h3>Miles apart, still us</h3>
+      <p>
+        Long distance means I can't always be there in person.
+        I can't magically turn a screen into a hug or shorten
+        every mile between us. But I can keep showing up,
+        listening, laughing with you, and looking forward to
+        the day we finally get to make memories side by side.
+      </p>
+    </div>
+
+    <div class="memory-card">
+      <div class="scrap-heart">🫂</div>
+      <h3>Our someday list</h3>
+      <p>
+        The first real hug. A silly selfie together.
+        Sharing ice cream. A date where we don't have to say
+        goodbye through a screen. And one birthday when I can
+        wish you in person. Little things, maybe — but with you,
+        I think they'll feel huge.
+      </p>
+    </div>
+
+    <button class="scrap-button" onclick="
+      document.getElementById('secretScrap').classList.toggle('open');
+      this.textContent = document.getElementById('secretScrap').classList.contains('open') ? 'Close my little secret ♡' : 'One little secret for you 💗';
+    ">One little secret for you 💗</button>
+
+    <div class="memory-card scrap-hidden" id="secretScrap">
+      <div class="scrap-heart">💗</div>
+      <h3>Between you and me...</h3>
+      <p>
+        If I could give you one thing today, it would be the
+        chance to see yourself through my eyes for a moment.
+        Maybe then you'd understand why your birthday matters
+        so much to me. I'm really glad you exist, Kuchu Puchu.
+        Happy birthday, baby. ♡
+      </p>
+    </div>
+
+    <div class="scrap-end">
+      made with love, for my favourite girl · 17.10 🎂
+    </div>
+  </div>
+</section>
+<!-- END OUR LITTLE LOVE SCRAPBOOK -->
+</body>
+</html>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
