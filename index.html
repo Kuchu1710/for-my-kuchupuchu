@@ -1,0 +1,213 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>For My Kuchu Puchu 💗</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500&display=swap');
+
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:#fff7fa;color:#71324f;font-family:'DM Sans',sans-serif;overflow-x:hidden}
+button{font:inherit;cursor:pointer}
+.hero{min-height:100svh;padding:35px 22px;display:flex;align-items:center;justify-content:center;text-align:center;position:relative;overflow:hidden;background:radial-gradient(ellipse at top,#ffe0eb,#fff5f8 55%,#fffafd)}
+.hero-content{max-width:540px;position:relative;z-index:2}
+.pill{display:inline-block;padding:9px 15px;border:1px solid #f8c2d4;border-radius:99px;background:#ffffffaa;font-size:11px;letter-spacing:1.5px;text-transform:uppercase}
+h1,h2,h3{font-family:'Playfair Display',Georgia,serif;font-weight:500}
+h1{font-size:clamp(43px,11vw,72px);line-height:1.08;margin:25px 0 17px}
+h1 em{color:#ed7099}
+.subtitle{max-width:370px;margin:auto;font-size:15px;line-height:1.9;color:#926078}
+.heart-big{font-size:53px;margin:22px 0;display:inline-block;animation:beat 1.5s infinite}
+@keyframes beat{0%,100%{transform:scale(1)}15%{transform:scale(1.13)}30%{transform:scale(1)}45%{transform:scale(1.08)}}
+.btn{border:0;border-radius:99px;padding:14px 22px;background:#ef7fa5;color:white;box-shadow:0 8px 22px #ef7fa533;transition:transform .2s}
+.btn:active{transform:scale(.97)}
+.btn.secondary{background:white;color:#b44f77;border:1px solid #f6c6d7;box-shadow:none}
+.hero .btn{margin-top:25px}
+.scroll-note{position:absolute;bottom:19px;left:0;right:0;font-size:10px;letter-spacing:2px;color:#bb8299}
+.float-heart{position:fixed;bottom:-35px;opacity:.6;pointer-events:none;z-index:10;animation:floatUp linear forwards}
+@keyframes floatUp{to{transform:translateY(-110vh) rotate(35deg);opacity:0}}
+section{padding:76px 20px}
+.section-inner{max-width:650px;margin:auto}
+.center{text-align:center}
+.eyebrow{color:#e8799e;text-transform:uppercase;font-size:11px;letter-spacing:2px;font-weight:700}
+h2{font-size:clamp(32px,8vw,45px);line-height:1.2;margin:13px 0 18px}
+p{line-height:1.85}
+.intro{color:#926078;max-width:470px;margin:0 auto 28px}
+.card{padding:26px 22px;border-radius:24px;background:white;border:1px solid #f9dce6;box-shadow:0 10px 35px #a74d6b0a;margin-top:20px}
+.letter{white-space:pre-line;text-align:left;line-height:2;color:#80536a;font-size:15px}
+.hidden-content{display:none}
+.hidden-content.show{display:block;animation:appear .5s ease}
+@keyframes appear{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:translateY(0)}}
+.reason-list{display:grid;gap:12px;text-align:left;margin-top:24px}
+.reason{display:flex;gap:13px;align-items:flex-start;background:white;border:1px solid #f9dce6;border-radius:17px;padding:17px}
+.reason span{font-size:22px}
+.reason p{margin:0;font-size:14px;line-height:1.7}
+.soft-section{background:#fff0f5}
+.future-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:25px}
+.future{background:#fffafd;border:1px solid #f8d4e0;border-radius:18px;padding:19px 13px}
+.future .emoji{font-size:27px}
+.future h3{font-size:18px;margin:12px 0 5px}
+.future p{margin:0;color:#a07589;font-size:12px;line-height:1.7}
+.quiz-options{display:grid;gap:10px;margin-top:20px}
+.quiz-options button{background:#fff4f8;color:#71324f;border:1px solid #f6c6d7;border-radius:14px;padding:14px}
+.quiz-options button:active{background:#ffdfeb}
+#quizResult{margin-top:18px;font-weight:600;line-height:1.8}
+.final{background:linear-gradient(150deg,#ffe2ec,#fff8fb);text-align:center}
+.final-heart{font-size:48px}
+footer{padding:25px 15px;text-align:center;font-size:12px;color:#b7859b;background:#fff8fb}
+@media(max-width:380px){.future-grid{grid-template-columns:1fr}.card{padding:22px 18px}}
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="hero-content">
+    <span class="pill">A little something for my favourite human</span>
+    <div class="heart-big">💗</div>
+    <h1>Happy Birthday,<br><em>My Kuchu Puchu</em></h1>
+    <p class="subtitle">To the girl who lives miles away from me but somehow takes up every little corner of my heart.</p>
+    <button class="btn" onclick="document.getElementById('letter').scrollIntoView({behavior:'smooth'})">Open your little surprise ♡</button>
+  </div>
+  <div class="scroll-note">MADE WITH LOVE, JUST FOR YOU ↓</div>
+</header>
+
+<section id="letter">
+  <div class="section-inner center">
+    <div class="eyebrow">A letter from your person</div>
+    <h2>For you, my baby. 💌</h2>
+    <p class="intro">Some things are easier to feel than to say. So I made you this little corner of the internet.</p>
+    <button class="btn" onclick="reveal('loveLetter',this)">Read your letter 💗</button>
+    <div id="loveLetter" class="hidden-content card letter">Happy birthday, my Kuchu Puchu, my baby, my favourite person. 🥹💗
+
+I wish I could be there with you today. I wish I could see that cute little face, annoy you a little, make you laugh and give you the biggest hug ever.
+
+But even with all these miles between us, I hope you know how special you are to me. You make ordinary days feel different just by being in them. You have your own little way of making me smile even when you're not trying.
+
+Thank you for being you. For the laughs, the silly moments, the little talks and all the memories we're making even from far away. You don't have to be happy every second or have everything figured out. I want you to feel loved on your good days and on the days when everything feels a little too much.
+
+Today is your day, baby. I hope this new year of your life brings you peace, happiness, new memories and so many reasons to smile.
+
+And one day, I hope I get to celebrate your birthday right beside you instead of through a screen. Until then, here's a little piece of my heart that you can open whenever you miss me.
+
+Happy birthday, my Kuchu Puchu. I love you so much. 🫶🏻💗
+
+Forever your annoying person,
+Your bbg's bbg ♡</div>
+  </div>
+</section>
+
+<section class="soft-section">
+  <div class="section-inner center">
+    <div class="eyebrow">Things you should know</div>
+    <h2>Reasons I adore you 🌷</h2>
+    <p class="intro">And honestly, this list could go on forever.</p>
+    <button class="btn secondary" onclick="reveal('reasons',this)">Tell me whyyy 🥹</button>
+    <div id="reasons" class="hidden-content reason-list">
+      <div class="reason"><span>🥹</span><p><b>Your little face.</b><br>Like seriously, how am I supposed to act normal when you're this cute?</p></div>
+      <div class="reason"><span>🫶🏻</span><p><b>The way you make me feel.</b><br>Even a normal conversation with you can become my favourite part of the day.</p></div>
+      <div class="reason"><span>😾</span><p><b>Your angry little moments.</b><br>Even when you're being a tiny menace, you're still my baby.</p></div>
+      <div class="reason"><span>💗</span><p><b>The person you are.</b><br>Your heart, your personality, your silly side and all the little things that make you YOU.</p></div>
+      <div class="reason"><span>🌙</span><p><b>Our little world.</b><br>We can be miles apart and still make something that feels like ours.</p></div>
+      <div class="reason"><span>♾️</span><p><b>Simply because it's you.</b><br>I don't need a fancy reason. You're my favourite person, and that says enough.</p></div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="section-inner center">
+    <div class="eyebrow">Our someday list</div>
+    <h2>Things I wanna do with you 🧸</h2>
+    <p class="intro">Little dreams for the day the distance finally gets out of our way.</p>
+    <button class="btn secondary" onclick="reveal('future',this)">Open our little wishlist ✨</button>
+    <div id="future" class="hidden-content">
+      <div class="future-grid">
+        <div class="future"><div class="emoji">🫂</div><h3>The first hug</h3><p>A real hug. No screen, no goodbye countdown. Just us.</p></div>
+        <div class="future"><div class="emoji">🍦</div><h3>Ice cream dates</h3><p>Sharing a flavour and stealing bites from each other.</p></div>
+        <div class="future"><div class="emoji">📸</div><h3>Silly pictures</h3><p>A hundred blurry pictures and one perfect memory.</p></div>
+        <div class="future"><div class="emoji">🌅</div><h3>Quiet evenings</h3><p>Just sitting together and enjoying being there.</p></div>
+        <div class="future"><div class="emoji">🎬</div><h3>Movie nights</h3><p>Except we'll actually be on the same sofa this time.</p></div>
+        <div class="future"><div class="emoji">💗</div><h3>More birthdays</h3><p>More candles, more wishes and more years of us.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="soft-section">
+  <div class="section-inner center">
+    <div class="eyebrow">Important question</div>
+    <h2>How much do I love you? 🥺</h2>
+    <p class="intro">Choose wisely, baby. This is a very serious scientific test.</p>
+    <div class="card">
+      <div class="quiz-options">
+        <button onclick="answer(0)">A little bit 💗</button>
+        <button onclick="answer(1)">A whole lot 🥹</button>
+        <button onclick="answer(2)">More than words can explain ♾️</button>
+        <button onclick="answer(3)">Enough to annoy you forever 😭</button>
+      </div>
+      <div id="quizResult"></div>
+    </div>
+  </div>
+</section>
+
+<section class="final">
+  <div class="section-inner">
+    <div class="final-heart">🎂💗🎀</div>
+    <div class="eyebrow">One last thing, birthday girl</div>
+    <h2>My favourite day is the day you came into this world.</h2>
+    <p class="intro">Because somehow, in this huge world, I got to know you. And that makes today special to me too.</p>
+    <button class="btn" onclick="finalSurprise()">Tap for one last hug 🫂</button>
+    <div id="finalMessage" class="hidden-content card">
+      <div style="font-size:42px">🫂💗</div>
+      <h3>A BIG BIG HUG FOR MY BABY!</h3>
+      <p>Imagine I'm holding you close right now and whispering...</p>
+      <p><b>"Happy birthday, Kuchu Puchu. You're so loved. Always remember that."</b></p>
+      <p>Now smile for me, you little cutie. 🥹💕</p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  made with all my love, just for my kuchu puchu 💗<br>
+  17.10 · your special day · forever my favourite
+</footer>
+
+<script>
+function reveal(id,button){
+  const el=document.getElementById(id);
+  const isOpen=el.classList.contains('show');
+  el.classList.toggle('show');
+  if(button){
+    button.textContent=isOpen?'Open it again ♡':'Close it ♡';
+  }
+}
+function answer(n){
+  const messages=[
+    "A LITTLE BIT?! BABY, TRY AGAIN 😭💗",
+    "A WHOLE LOT? STILL UNDERESTIMATING IT, CUTIE 🥹",
+    "CORRECT ANSWER. YOU WIN ALL MY LOVE. ♾️💗",
+    "THAT'S THE PLAN, MY LITTLE MENACE. NO ESCAPE NOW 😭🫶🏻"
+  ];
+  document.getElementById('quizResult').textContent=messages[n];
+  for(let i=0;i<12;i++)makeHeart();
+}
+function finalSurprise(){
+  document.getElementById('finalMessage').classList.add('show');
+  for(let i=0;i<25;i++)makeHeart();
+}
+function makeHeart(){
+  const h=document.createElement('div');
+  h.className='float-heart';
+  h.textContent=['💗','💕','♡','🎀','💖'][Math.floor(Math.random()*5)];
+  h.style.left=Math.random()*100+'vw';
+  h.style.fontSize=(16+Math.random()*22)+'px';
+  h.style.animationDuration=(3+Math.random()*4)+'s';
+  document.body.appendChild(h);
+  setTimeout(()=>h.remove(),7500);
+}
+setInterval(()=>{if(Math.random()>.45)makeHeart()},1300);
+</script>
+</body>
+      </html>
+      
